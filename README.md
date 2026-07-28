@@ -26,16 +26,22 @@ An end-to-end simulated industrial workcell. A PRR robotic arm autonomously insp
 * **Tech Stack:** `OpenCV`, `PyBullet`, `SymPy`, `Matplotlib`
 * 🔗 **[View Project](./Automated-Inspection-System/)**
 
-### 3. [Surgical Vision Deployment (Deep Learning & XAI)](./Surgical-Vision-Deployment/)
-A robust visual perception module for detecting surgical instruments in real-world cataract surgery videos. Engineered for real-time edge deployment with a focus on interpretability.
-* **Key Concepts:** Multi-label Classification, CutMix/Mixup, Model Soups (Zero-latency ensemble), Real-time Profiling (FPS/VRAM), XAI (Grad-CAM, t-SNE).
-* **Tech Stack:** `PyTorch`, `Optuna`, `Captum`, `Torchvision`
+### 3. [Surgical Tool Perception: Deep Learning & XAI](./Surgical-Tool-Perception-CNN/)
+A deep learning project focused on the multi-label classification of surgical instruments in real-world cataract surgery videos. It tackles clinical challenges like severe class imbalance and instrument occlusion.
+* **Key Concepts:** Multi-label Classification, Transfer Learning, Hyperparameter Optimization, Stratified K-Fold Cross-Validation.
+* **Tech Stack:** `PyTorch`, `Optuna`, `Pandas`, `Albumentations`
+* 🔗 **[View Project](./Surgical-Tool-Perception-CNN/)**
+
+### 4. [Surgical Vision Deployment & Profiling](./Surgical-Vision-Deployment/)
+Transitioning from architecture design to operational deployment, this project focuses on PyTorch pipeline engineering, real-time inference benchmarking, and visual debugging for robotic control loops.
+* **Key Concepts:** CutMix/Mixup Augmentations, Real-time Profiling (FPS/VRAM), Model Soups (Zero-latency ensemble), XAI (Grad-CAM, t-SNE).
+* **Tech Stack:** `PyTorch Profiler`, `Captum`, `Scikit-learn`
 * 🔗 **[View Project](./Surgical-Vision-Deployment/)**
 
-### 4. [Surgical Tracking & Kinematic Safety System](./Surgical-Tracking-and-Safety-System/)
+### 5. [Surgical Tracking & Kinematic Safety System](./Surgical-Tracking-and-Safety-System/)
 A sophisticated Multi-Object Tracking (MOT) pipeline integrated with a robotic control safety dashboard. It tracks surgical tools and evaluates their motion for spatial hazards and actuator wear.
 * **Key Concepts:** Tracking-by-Detection (YOLO + SORT), Kinematic Hazard Detection, High-frequency Tremor Filtering, Control Effort Integration ($\int a^2 dt$), Surgical HUD Rendering.
-* **Tech Stack:** `YOLOv8/v11`, `ByteTrack`, `FilterPy`, `OpenCV`
+* **Tech Stack:** `YOLO`, `ByteTrack`, `FilterPy`, `OpenCV`
 * 🔗 **[View Project](./Surgical-Tracking-and-Safety-System/)**
 
 ---
