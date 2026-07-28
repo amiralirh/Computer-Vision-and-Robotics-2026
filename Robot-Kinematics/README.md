@@ -23,11 +23,6 @@ This project was developed as part of the *Robotics and Machine Vision* coursewo
 - Designed an evaluation metric to differentiate between *Expert* and *Novice* surgeons based on **Angular Jitter**.
 - Proved the geometric invariance of the relative rotation matrix $R_{\text{rel}} = R(t)^T R(t+\Delta t)$ and computed the "Incompetence Score" by analyzing rotational deviations over time.
 
-## 🛠️ Code Implementations
-The repository includes robust implementations in **Python/MATLAB**:
-* **`robust_rpy_extractor`**: Converts a $3 \times 3$ rotation matrix to Roll-Pitch-Yaw angles using `atan2`, meticulously handling edge cases ($\cos\beta = 0$) to prevent angular jumps.
-* **`pose_reconstruction`**: Takes a corrupted homogeneous transformation matrix, rectifies it to valid $SO(3)$ space, and calculates the inverse transform without direct $4 \times 4$ determinants.
-* **`skill_assessment`**: Evaluates a 3D array of $N$ transformation matrices and returns the positional/angular jitter score.
 
 ## 📊 Mathematical Highlights
 The analysis extensively utilizes:
